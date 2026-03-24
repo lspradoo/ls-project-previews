@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
-
         :root {
             --bg-main: #0f0e17;       
             --bg-secondary: #1a1a2e;  
@@ -32,7 +31,6 @@
 
         a { text-decoration: none; transition: var(--transition); }
 
-    
         header.dashboard-header {
             padding: 1.5rem 0;
             border-bottom: 1px solid rgba(127, 90, 240, 0.1);
@@ -62,7 +60,6 @@
             text-shadow: 0 0 10px var(--purple-primary);
         }
 
-        /* Conteúdo Principal */
         main.dashboard-main {
             flex-grow: 1;
             padding: 4rem 0;
@@ -95,11 +92,13 @@
             margin: 0 auto 3rem auto;
         }
 
-        /* Grid de Projetos - Estilo Portfólio */
         .projects-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 2rem;
+            justify-content: center;
+            max-width: 800px;
+            margin: 0 auto;
         }
 
         .project-card {
@@ -175,7 +174,7 @@
     <main class="dashboard-main">
         <div class="container dashboard-content">
             <h1 class="dashboard-title">Portal de <span class="purple-text">Previews</span></h1>
-            <p class="dashboard-subtitle">Um ambiente exclusivo para visualização de cases de sucesso e projetos em desenvolvimento com DNA de Marketing.</p>
+            <p class="dashboard-subtitle">Ambiente exclusivo para visualização de projetos de clientes e cases finalizados.</p>
 
             <div class="projects-grid">
                 <article class="project-card">
@@ -194,15 +193,6 @@
                     </div>
                     <p>Web presence para escritório de advocacia, projetada para transmitir confiança e agilizar o contato.</p>
                     <a href="./oliveira-sales/" class="btn-view-case">Ver Case Study <i class="fas fa-arrow-right"></i></a>
-                </article>
-                
-                <article class="project-card" style="opacity: 0.5; border-style: dashed;">
-                    <div class="card-header">
-                        <i class="fas fa-rocket" style="color:var(--text-gray)"></i>
-                        <h3 style="color:var(--text-gray)">SmartCase Pro</h3>
-                    </div>
-                    <p>A mais completa ferramenta de formatação. Em breve, repositório exclusivo com documentação técnica.</p>
-                    <span class="btn-view-case" style="color:var(--text-gray)">Em Breve</span>
                 </article>
             </div>
         </div>
